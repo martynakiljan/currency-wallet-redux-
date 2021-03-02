@@ -13,12 +13,11 @@
 * enters a price
 
 I download with api:
-*current exchange rate for the selected currency
+*current exchange rate for the selected currency*
 
 
 and calculate profit / loss! :sunny:
-
-(data is saved and retrieved using Local Storage)
+*(data is saved and retrieved using Local Storage)*
 
 -------
 
@@ -52,8 +51,6 @@ and calculate profit / loss! :sunny:
 
 ----
 
-
-----
 
 :computer: TECHNOLOGIES : html, css and REACT, REDUX , API, WEBPACK, NPM , LOCAL STORAGE
 
