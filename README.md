@@ -57,7 +57,7 @@ and calculate profit / loss! :sunny:
 
 ----
 
-My next small project from JS basics  :arrow_right: :arrow_right: :arrow_right: [CLICK ME ](https://github.com/martynakil/-form---uploading-a-CSV-file-in-JS)
+My next  project from JS basics  :arrow_right: :arrow_right: :arrow_right: [CLICK ME ](https://github.com/martynakil/-form---uploading-a-CSV-file-in-JS)
 
 
 
