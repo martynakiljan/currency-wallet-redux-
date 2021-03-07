@@ -4,7 +4,8 @@ AddedCurrencyTitle
 } from '../style/Wallet.styled';
 import { useSelector } from "react-redux";
 import '../App.css'
-
+import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
 const ListAddedCurrency = () => {
 
@@ -49,15 +50,15 @@ const ListAddedCurrency = () => {
         const currentRate= parseFloat(exchange[item.currency]).toFixed(2);
               if(item) {
                 return (
-                  <tr key={id}>
-                  <td>{currency}</td>
-                  <td>{quality}x</td>
-                  <td>{date}</td>
-                  <td>{price} PLN </td>
-                  <td>{currentRate}</td>
-                  <td>{totalPrice(item)} {currency}</td>
-                  <td>{calculateProfitOrLoss(item, totalPrice)} </td>
-                  </tr>
+                  <Tr key={id}>
+                  <Td>{currency}</Td>
+                  <Td>{quality}x</Td>
+                  <Td>{date}</Td>
+                  <Td>{price} PLN </Td>
+                  <Td>{currentRate}</Td>
+                  <Td>{totalPrice(item)} {currency}</Td>
+                  <Td>{calculateProfitOrLoss(item, totalPrice)} </Td>
+                  </Tr>
                 )
               } else {
                 return null;
@@ -69,20 +70,20 @@ const ListAddedCurrency = () => {
 
      const renderTable = () => {	
        return (	
-         <table id='tableItem' >	
-               <thead>	
-                   <tr>{renderHeader()}</tr>	
-               </thead>	
-               <tbody>	
+         <Table id='tableItem' >	
+               <Thead>	
+                   <Tr>{renderHeader()}</Tr>	
+               </Thead>	
+               <Tbody>	
                       {renderBody()}	
-               </tbody>	
-         </table>	
+               </Tbody>	
+         </Table>	
        );	
      };
     return (
         <>
             <AddedCurrencyTitle>Added Currency:</AddedCurrencyTitle>
-            <ul> { renderTable() } </ul>   
+            <> { renderTable() } </>   
         </>
      
     )

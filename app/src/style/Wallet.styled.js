@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const WalletContainer = styled.div`
 
-width: 70%;
+max-width: 900px;
 margin: 0 auto;
 min-height: 500px;
 background: rgb(238,174,202);
@@ -20,6 +20,7 @@ color: white;
 padding: 40px;
 font-size: 30px;
 text-transform: uppercase;
+
 `;
 
 
@@ -37,8 +38,17 @@ flex-direction: column;
 background-color: white;
 margin: 0 auto;
 width: 70%auto;
-`;
 
+@media (max-width: 760px) {
+   font-size:10px;
+   padding: 10px;
+  }
+
+@media (min-width: 760px) {
+   font-size:16px;
+   padding: 10px;
+  }
+`;
 
 export const TitleForForm = styled.h2`
 width: 100%;
@@ -47,15 +57,26 @@ color: #484848;
 font-weight: lighter;
 padding: 10px;
 box-shadow: 5px 5px 15px 5px #CECECE;
+@media (min-width: 650px) {
+   font-size: 20px;
+  }
 `;
 
 
 export const Label = styled.label`
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 width: 100%;
+font-size:14px;
 height: 50px;
+@media (max-width: 650px) {
+    width: 100%
+}
+@media (min-width: 650px) {
+   font-size:16px;
+
+  }
 
 
 `;
@@ -63,22 +84,30 @@ height: 50px;
 
 export const Select = styled.select`
   display: block;
-  font-size: 16px;
   font-family: sans-serif;
-  font-weight: 700;
+  font-size: 16px;
   color: #444;
-  line-height: 1.3;
   padding: .6em 1.4em .5em .8em;
   width: 40%;
   box-sizing: border-box;
   margin: 0;
   border: 1px solid #aaa;
   box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-  border-radius: .5em;
+  border-radius: .3em;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
+  @media (max-width: 650px) {
+    width: 50%;
+    padding: 0;
+}
+@media (min-width: 650px) {
+   font-size:16px;
+   padding: 10px;
+   line-height: 1rem;
+  }
+
 
 `;
 
@@ -90,28 +119,38 @@ export const Input = styled.input`
   display: block;
   font-size: 16px;
   font-family: sans-serif;
-  font-weight: 700;
   color: #444;
-  line-height: 1.3;
   padding: .6em 1.4em .5em .8em;
   box-sizing: border-box;
   margin: 0;
   border: 1px solid #aaa;
   box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-  border-radius: .5em;
+  border-radius: .3em;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
   margin-left: 40px;
+  @media (max-width: 650px) {
+    width: 100%;
+    
+  }
+@media (min-width: 650px) {
+   font-size:16px;
+   line-height: 1rem;
+   width: 60%;
+  }
+
 
 `;
 
 export const Button = styled.button`
   text-transform: uppercase;
   background-color: white;
-  width: 20%;
+  font-size: 12px;
+  width: 100px;
   margin: 0 auto;
+  margin-top: 20px;
   box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
   border-radius: .5em;
   border: none;
@@ -119,7 +158,10 @@ export const Button = styled.button`
   box-shadow: 5px 5px 17px 5px rgba(229,229,229,0.2);
   box-shadow: 5px 5px 15px 5px #CECECE;
 
- 
+  @media (min-width: 650px) {
+   margin-top: 50px;
+   width: 30%;
+  }
 `;
 
 
