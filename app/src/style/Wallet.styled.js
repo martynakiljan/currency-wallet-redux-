@@ -85,9 +85,10 @@ height: 50px;
 export const Select = styled.select`
   display: block;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #444;
-  padding: .6em 1.4em .5em .8em;
+  height: 30px;
+  padding-left: 5px;
   width: 40%;
   box-sizing: border-box;
   margin: 0;
@@ -104,8 +105,7 @@ export const Select = styled.select`
 }
 @media (min-width: 650px) {
    font-size:16px;
-   padding: 10px;
-   line-height: 1rem;
+
   }
 
 
@@ -117,6 +117,7 @@ export const Input = styled.input`
   justify-content: center;
   align-items: center;
   display: block;
+  height: 30px;
   font-size: 16px;
   font-family: sans-serif;
   color: #444;
