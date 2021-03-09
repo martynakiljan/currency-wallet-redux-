@@ -3,7 +3,6 @@ export default function validateInfo(values) {
 
     const errors = {}
     errors.length = 0
-    
 
     if(!values.quality.trim()) {
         errors.length+=1

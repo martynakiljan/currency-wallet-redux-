@@ -44,6 +44,7 @@ const useForm = (validate) => {
      
         const err = validate(values);
         setErrors(err)
+        console.log(values)
        
      
         if(err.length === 0) {
@@ -59,7 +60,7 @@ const useForm = (validate) => {
                 
 
             setValues({
-               currency: '',
+               ...values,
                quality: '',
                date: '',
                price: '',
