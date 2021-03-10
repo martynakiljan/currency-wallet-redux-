@@ -21,7 +21,7 @@ const useForm = (validate) => {
 
     const [values, setValues] = useState({
        currency: '',
-       quality: '',
+       quantity: '',
        date: '',
        price: '',
     })
@@ -61,7 +61,7 @@ const useForm = (validate) => {
 
             setValues({
                ...values,
-               quality: '',
+               quantity: '',
                date: '',
                price: '',
             })

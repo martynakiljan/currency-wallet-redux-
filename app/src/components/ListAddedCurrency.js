@@ -23,15 +23,15 @@ const ListAddedCurrency = () => {
 
 
     const totalPrice = item => {
-      const {quality, currency, price} = item
-      const  totalPrice = ((quality) * (price) * (exchange[currency]))
-      return totalPrice.toFixed(2);
+      const {quantity, price} = item
+      const  totalPrice = ((quantity) * (price))
+      return totalPrice.toFixed(2)
     }
    
-    const calculateProfitOrLoss = item => {
-      const {quality, currency, price} = item
+    const calculateProfitOrLoss = (item, totalPrice) => {
+      const {quantity, currency, price} = item
       const curr = exchange[currency]
-      const calculateResult = (quality * price * curr) - (quality * curr) 
+      const calculateResult =   ((quantity) * (price) * (curr)) - ((quantity) * (price)) 
 
       const result = calculateResult.toFixed(2)
 
@@ -46,13 +46,13 @@ const ListAddedCurrency = () => {
       const renderBody = () => {
         
         return  currencyList.map(item => {
-        const {quality, currency, price, date, id} = item
+        const {quantity, currency, price, date, id} = item
         const currentRate= parseFloat(exchange[item.currency]).toFixed(2);
               if(item) {
                 return (
                   <Tr key={id}>
                   <Td>{currency}</Td>
-                  <Td>{quality}x</Td>
+                  <Td>{quantity}x</Td>
                   <Td>{date}</Td>
                   <Td>{price} PLN </Td>
                   <Td>{currentRate}</Td>

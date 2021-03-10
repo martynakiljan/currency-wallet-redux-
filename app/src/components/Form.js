@@ -46,13 +46,13 @@ import {
           <Label>
              Quantity:{" "}
             <Input
-              id="quality"
+              id="quantity"
               type='number'
-              name="quality"
-              value={values.quality}
+              name="quantity"
+              value={values.quantity}
               onChange={handleChange}
               />
-            {errors.quality && <p className="error">{errors.quality}</p>}
+            {errors.quantity && <p className="error">{errors.quantity}</p>}
           </Label>
         </Container>
         <Container>

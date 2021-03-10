@@ -4,9 +4,9 @@ export default function validateInfo(values) {
     const errors = {}
     errors.length = 0
 
-    if(!values.quality.trim()) {
+    if(!values.quantity.trim()) {
         errors.length+=1
-        errors.quality = "Please enter a quality" 
+        errors.quantity = "Please enter a quality" 
     }
 
     if(!values.date.trim()) {
