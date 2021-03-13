@@ -47,7 +47,7 @@ const ListAddedCurrency = () => {
         
         return  currencyList.map(item => {
         const {quantity, currency, price, date, id} = item
-        const currentRate= parseFloat(exchange[item.currency]).toFixed(2);
+        const currentRate= parseFloat(exchange[item.currency]);
               if(item) {
                 return (
                   <Tr key={id}>
