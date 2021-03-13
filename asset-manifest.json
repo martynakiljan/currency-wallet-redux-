@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/currency-wallet-redux-/static/css/main.aeefa623.chunk.css",
+    "main.js": "/currency-wallet-redux-/static/js/main.31d4403a.chunk.js",
+    "main.js.map": "/currency-wallet-redux-/static/js/main.31d4403a.chunk.js.map",
+    "runtime-main.js": "/currency-wallet-redux-/static/js/runtime-main.aecf57f1.js",
+    "runtime-main.js.map": "/currency-wallet-redux-/static/js/runtime-main.aecf57f1.js.map",
+    "static/css/2.11bf360b.chunk.css": "/currency-wallet-redux-/static/css/2.11bf360b.chunk.css",
+    "static/js/2.fd4fdc39.chunk.js": "/currency-wallet-redux-/static/js/2.fd4fdc39.chunk.js",
+    "static/js/2.fd4fdc39.chunk.js.map": "/currency-wallet-redux-/static/js/2.fd4fdc39.chunk.js.map",
+    "static/js/3.e9085f0b.chunk.js": "/currency-wallet-redux-/static/js/3.e9085f0b.chunk.js",
+    "static/js/3.e9085f0b.chunk.js.map": "/currency-wallet-redux-/static/js/3.e9085f0b.chunk.js.map",
+    "index.html": "/currency-wallet-redux-/index.html",
+    "static/css/2.11bf360b.chunk.css.map": "/currency-wallet-redux-/static/css/2.11bf360b.chunk.css.map",
+    "static/css/main.aeefa623.chunk.css.map": "/currency-wallet-redux-/static/css/main.aeefa623.chunk.css.map",
+    "static/js/2.fd4fdc39.chunk.js.LICENSE.txt": "/currency-wallet-redux-/static/js/2.fd4fdc39.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aecf57f1.js",
+    "static/css/2.11bf360b.chunk.css",
+    "static/js/2.fd4fdc39.chunk.js",
+    "static/css/main.aeefa623.chunk.css",
+    "static/js/main.31d4403a.chunk.js"
+  ]
+}
